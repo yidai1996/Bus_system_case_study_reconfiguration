@@ -6,10 +6,10 @@ begin
     import CSV 
     import PowerModelsONM as ONM
 end
-using PowerModelsONM
+using PowerModelsONM, JuMP
 
 # 1) Point to the three files on disk:
-onm_path = "G:\\My Drive\\Research\\ModularUnit"
+onm_path = "G:\\My Drive\\Research\\Bus_git\\Bus_system_case_study_reconfiguration"
 dss_file      = joinpath(onm_path, "network.ieee13mod.dss")
 settings_file = joinpath(onm_path, "ieee13_settings open_all_switchable_lines.json")
 events_file   = joinpath(onm_path, "ieee13_events_open_all_switchable_lines.json")
@@ -43,15 +43,9 @@ result_single = ONM.optimize_switches(
     problem     = "block"             # standard branch‐and‐bound for mixed‐integer
 )
 
-result = IM.build_result(pm, JuMP.solve_time(pm.model); 
-solution_processors=ONM._default_solution_processors)
+using JSON
 
-# 6) Inspect the solution:
-#    e.g. result_single["node_voltages"], result_single["branch_status"], result_single["objective"]
-println("Objective (total loss or load‐shed): ", result_single["objective"])
-using Printf
-for (sw_id, sw_status) in result_single["branch_status"]
-    if haskey(ieee13_data["network"]["switch"], sw_id)
-      @printf("  %s is %s\n", sw_id, sw_status ? "CLOSED" : "OPEN")
-    end
+open("all_switchable_lines_results.json", "w") do io
+    JSON.print(io, result_single)
 end
+
