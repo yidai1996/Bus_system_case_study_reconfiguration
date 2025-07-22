@@ -1,0 +1,1644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml>
+  <key id="d0" attr.name="source_id" attr.type="string" for="node"/>
+  <key id="d1" attr.name="rg" attr.type="string" for="node"/>
+  <key id="d2" attr.name="grounded" attr.type="string" for="node"/>
+  <key id="d3" attr.name="status" attr.type="string" for="node"/>
+  <key id="d4" attr.name="terminals" attr.type="string" for="node"/>
+  <key id="d5" attr.name="vm_ub" attr.type="string" for="node"/>
+  <key id="d6" attr.name="vm_lb" attr.type="string" for="node"/>
+  <key id="d7" attr.name="type" attr.type="string" for="node"/>
+  <key id="d8" attr.name="xg" attr.type="string" for="node"/>
+  <key id="d9" attr.name="microgrid_id" attr.type="string" for="node"/>
+  <key id="d10" attr.name="model" attr.type="string" for="node"/>
+  <key id="d11" attr.name="connections" attr.type="string" for="node"/>
+  <key id="d12" attr.name="pd_nom" attr.type="string" for="node"/>
+  <key id="d13" attr.name="vm_nom" attr.type="string" for="node"/>
+  <key id="d14" attr.name="dispatchable" attr.type="string" for="node"/>
+  <key id="d15" attr.name="bus" attr.type="string" for="node"/>
+  <key id="d16" attr.name="configuration" attr.type="string" for="node"/>
+  <key id="d17" attr.name="qd_nom" attr.type="string" for="node"/>
+  <key id="d18" attr.name="dss" attr.type="string" for="node"/>
+  <key id="d19" attr.name="clpu_factor" attr.type="string" for="node"/>
+  <key id="d20" attr.name="time_series" attr.type="string" for="node"/>
+  <key id="d21" attr.name="gs" attr.type="string" for="node"/>
+  <key id="d22" attr.name="bs" attr.type="string" for="node"/>
+  <key id="d23" attr.name="vg" attr.type="string" for="node"/>
+  <key id="d24" attr.name="qg_ub" attr.type="string" for="node"/>
+  <key id="d25" attr.name="phases" attr.type="string" for="node"/>
+  <key id="d26" attr.name="pg" attr.type="string" for="node"/>
+  <key id="d27" attr.name="qg_lb" attr.type="string" for="node"/>
+  <key id="d28" attr.name="pg_lb" attr.type="string" for="node"/>
+  <key id="d29" attr.name="qg" attr.type="string" for="node"/>
+  <key id="d30" attr.name="inverter" attr.type="string" for="node"/>
+  <key id="d31" attr.name="pg_ub" attr.type="string" for="node"/>
+  <key id="d32" attr.name="control_mode" attr.type="string" for="node"/>
+  <key id="d33" attr.name="cost_pg_parameters" attr.type="string" for="node"/>
+  <key id="d34" attr.name="cost_pg_model" attr.type="string" for="node"/>
+  <key id="d35" attr.name="energy" attr.type="string" for="node"/>
+  <key id="d36" attr.name="xs" attr.type="string" for="node"/>
+  <key id="d37" attr.name="charge_ub" attr.type="string" for="node"/>
+  <key id="d38" attr.name="energy_ub" attr.type="string" for="node"/>
+  <key id="d39" attr.name="qs" attr.type="string" for="node"/>
+  <key id="d40" attr.name="qex" attr.type="string" for="node"/>
+  <key id="d41" attr.name="sm_ub" attr.type="string" for="node"/>
+  <key id="d42" attr.name="qs_lb" attr.type="string" for="node"/>
+  <key id="d43" attr.name="phase_unbalance_factor" attr.type="string" for="node"/>
+  <key id="d44" attr.name="pex" attr.type="string" for="node"/>
+  <key id="d45" attr.name="charge_efficiency" attr.type="string" for="node"/>
+  <key id="d46" attr.name="discharge_ub" attr.type="string" for="node"/>
+  <key id="d47" attr.name="ps" attr.type="string" for="node"/>
+  <key id="d48" attr.name="rs" attr.type="string" for="node"/>
+  <key id="d49" attr.name="discharge_efficiency" attr.type="string" for="node"/>
+  <key id="d50" attr.name="qs_ub" attr.type="string" for="node"/>
+  <key id="d51" attr.name="va" attr.type="string" for="node"/>
+  <key id="d52" attr.name="vm" attr.type="string" for="node"/>
+  <key id="d53" attr.name="cm_ub" attr.type="string" for="edge"/>
+  <key id="d54" attr.name="xs" attr.type="string" for="edge"/>
+  <key id="d55" attr.name="vad_lb" attr.type="string" for="edge"/>
+  <key id="d56" attr.name="f_connections" attr.type="string" for="edge"/>
+  <key id="d57" attr.name="length" attr.type="string" for="edge"/>
+  <key id="d58" attr.name="name" attr.type="string" for="edge"/>
+  <key id="d59" attr.name="status" attr.type="string" for="edge"/>
+  <key id="d60" attr.name="g_to" attr.type="string" for="edge"/>
+  <key id="d61" attr.name="dss" attr.type="string" for="edge"/>
+  <key id="d62" attr.name="g_fr" attr.type="string" for="edge"/>
+  <key id="d63" attr.name="source_id" attr.type="string" for="edge"/>
+  <key id="d64" attr.name="t_connections" attr.type="string" for="edge"/>
+  <key id="d65" attr.name="f_bus" attr.type="string" for="edge"/>
+  <key id="d66" attr.name="b_fr" attr.type="string" for="edge"/>
+  <key id="d67" attr.name="vad_ub" attr.type="string" for="edge"/>
+  <key id="d68" attr.name="t_bus" attr.type="string" for="edge"/>
+  <key id="d69" attr.name="b_to" attr.type="string" for="edge"/>
+  <key id="d70" attr.name="rs_orig" attr.type="string" for="edge"/>
+  <key id="d71" attr.name="rs" attr.type="string" for="edge"/>
+  <key id="d72" attr.name="xs_orig" attr.type="string" for="edge"/>
+  <key id="d73" attr.name="linecode" attr.type="string" for="edge"/>
+  <key id="d74" attr.name="type" attr.type="string" for="edge"/>
+  <key id="d75" attr.name="state" attr.type="string" for="edge"/>
+  <key id="d76" attr.name="dispatchable" attr.type="string" for="edge"/>
+  <key id="d77" attr.name="polarity" attr.type="string" for="edge"/>
+  <key id="d78" attr.name="sm_nom" attr.type="string" for="edge"/>
+  <key id="d79" attr.name="tm_lb" attr.type="string" for="edge"/>
+  <key id="d80" attr.name="connections" attr.type="string" for="edge"/>
+  <key id="d81" attr.name="tm_set" attr.type="string" for="edge"/>
+  <key id="d82" attr.name="tm_step" attr.type="string" for="edge"/>
+  <key id="d83" attr.name="bus" attr.type="string" for="edge"/>
+  <key id="d84" attr.name="configuration" attr.type="string" for="edge"/>
+  <key id="d85" attr.name="noloadloss" attr.type="string" for="edge"/>
+  <key id="d86" attr.name="cmag" attr.type="string" for="edge"/>
+  <key id="d87" attr.name="xsc" attr.type="string" for="edge"/>
+  <key id="d88" attr.name="sm_ub" attr.type="string" for="edge"/>
+  <key id="d89" attr.name="rw" attr.type="string" for="edge"/>
+  <key id="d90" attr.name="tm_fix" attr.type="string" for="edge"/>
+  <key id="d91" attr.name="vm_nom" attr.type="string" for="edge"/>
+  <key id="d92" attr.name="tm_ub" attr.type="string" for="edge"/>
+  <key id="d93" attr.name="controls" attr.type="string" for="edge"/>
+  <key id="d94" attr.name="bank" attr.type="string" for="edge"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n24">
+      <data key="d0">bus.800aux</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n1">
+      <data key="d0">bus.671</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n2">
+      <data key="d0">bus.800</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n3">
+      <data key="d0">bus.680</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n4">
+      <data key="d0">bus.652</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1]</data>
+      <data key="d5">[2.641954831811728]</data>
+      <data key="d6">[2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n5">
+      <data key="d0">bus.634</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[0.30484094213212237, 0.30484094213212237, 0.30484094213212237]</data>
+      <data key="d6">[0.24941531628991828, 0.24941531628991828, 0.24941531628991828]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n6">
+      <data key="d0">bus.701</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d9">3</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n7">
+      <data key="d0">bus.675</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d9">2</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n8">
+      <data key="d0">bus.702</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d9">4</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n9">
+      <data key="d0">bus.650</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n10">
+      <data key="d0">bus.600</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n11">
+      <data key="d0">bus.700</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d9">3</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n12">
+      <data key="d0">bus.801</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d9">1</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n13">
+      <data key="d0">bus.rg60</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n14">
+      <data key="d0">bus.611</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[3]</data>
+      <data key="d5">[2.641954831811728]</data>
+      <data key="d6">[2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n15">
+      <data key="d0">bus.645</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n16">
+      <data key="d0">bus.632</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n17">
+      <data key="d0">bus.675aux</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d9">2</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n18">
+      <data key="d0">bus.703</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d9">4</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n19">
+      <data key="d0">bus.633</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n20">
+      <data key="d0">bus.684</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n21">
+      <data key="d0">bus.sourcebus</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n22">
+      <data key="d0">bus.692</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d9">2</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n23">
+      <data key="d0">bus.670</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[1, 2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n0">
+      <data key="d0">bus.646</data>
+      <data key="d1">Float64[]</data>
+      <data key="d2">Int64[]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d4">[2, 3]</data>
+      <data key="d5">[2.641954831811728, 2.641954831811728]</data>
+      <data key="d6">[2.161599407845959, 2.161599407845959]</data>
+      <data key="d7">bus</data>
+      <data key="d8">Float64[]</data>
+    </node>
+    <node id="n25">
+      <data key="d0">load.634a</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1]</data>
+      <data key="d12">[160.0]</data>
+      <data key="d13">0.277</data>
+      <data key="d14">NO</data>
+      <data key="d15">634</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[110.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "634a", "bus1" =&gt; "634.1", "phases" =&gt; "1", "kw" =&gt; "160", "model" =&gt; "1", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "0.277", "vminpu" =&gt; "0.6", "kvar" =&gt; "110")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n26">
+      <data key="d0">load.675b</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[2]</data>
+      <data key="d12">[27.200000000000003]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">675</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[24.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("model" =&gt; "1", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "daily" =&gt; "microgrid1d", "name" =&gt; "675b", "bus1" =&gt; "675.2", "phases" =&gt; "1", "kw" =&gt; "68", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kvar" =&gt; "60")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1d", "pd_nom" =&gt; "microgrid1d")</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n27">
+      <data key="d0">load.671</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d12">[385.0, 385.0, 385.0]</data>
+      <data key="d13">4.16</data>
+      <data key="d14">NO</data>
+      <data key="d15">671</data>
+      <data key="d16">DELTA</data>
+      <data key="d17">[220.0, 220.0, 220.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "671", "bus1" =&gt; "671.1.2.3", "phases" =&gt; "3", "kw" =&gt; "1155", "model" =&gt; "1", "conn" =&gt; "delta", "vmaxpu" =&gt; "1.4", "kv" =&gt; "4.16", "vminpu" =&gt; "0.6", "kvar" =&gt; "660")</data>
+      <data key="d7">load</data>
+    </node>
+    <node id="n28">
+      <data key="d0">load.675a</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1]</data>
+      <data key="d12">[194.0]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">675</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[76.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("model" =&gt; "1", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "daily" =&gt; "microgrid1d", "name" =&gt; "675a", "bus1" =&gt; "675.1", "phases" =&gt; "1", "kw" =&gt; "485", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kvar" =&gt; "190")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1d", "pd_nom" =&gt; "microgrid1d")</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n29">
+      <data key="d0">load.652</data>
+      <data key="d10">IMPEDANCE</data>
+      <data key="d11">[1]</data>
+      <data key="d12">[128.0]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">652</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[86.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "652", "bus1" =&gt; "652.1", "phases" =&gt; "1", "kw" =&gt; "128", "model" =&gt; "2", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "kvar" =&gt; "86")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n30">
+      <data key="d0">load.701</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d12">[5.0, 5.0, 5.0]</data>
+      <data key="d13">2.4017771198288433</data>
+      <data key="d14">NO</data>
+      <data key="d15">701</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[1.6666666666666667, 1.6666666666666667, 1.6666666666666667]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "701", "phases" =&gt; "3", "bus1" =&gt; "701.1.2.3", "kw" =&gt; "15", "model" =&gt; "1", "conn" =&gt; "wye", "kv" =&gt; "4.16", "kvar" =&gt; "5", "daily" =&gt; "microgrid1b")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1b", "pd_nom" =&gt; "microgrid1b")</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n31">
+      <data key="d0">load.702</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d12">[4.166666666666667, 4.166666666666667, 4.166666666666667]</data>
+      <data key="d13">2.4017771198288433</data>
+      <data key="d14">NO</data>
+      <data key="d15">702</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[1.6666666666666667, 1.6666666666666667, 1.6666666666666667]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "702", "phases" =&gt; "3", "bus1" =&gt; "702.1.2.3", "kw" =&gt; "50", "model" =&gt; "1", "conn" =&gt; "wye", "kv" =&gt; "4.16", "kvar" =&gt; "20", "daily" =&gt; "microgrid1a")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1a", "pd_nom" =&gt; "microgrid1a")</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n32">
+      <data key="d0">load.700</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d12">[3.3333333333333335, 3.3333333333333335, 3.3333333333333335]</data>
+      <data key="d13">2.4017771198288433</data>
+      <data key="d14">NO</data>
+      <data key="d15">700</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[1.0, 1.0, 1.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "700", "phases" =&gt; "3", "bus1" =&gt; "700.1.2.3", "kw" =&gt; "10", "model" =&gt; "1", "conn" =&gt; "wye", "kv" =&gt; "4.16", "kvar" =&gt; "3", "daily" =&gt; "microgrid1b")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1b", "pd_nom" =&gt; "microgrid1b")</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n33">
+      <data key="d0">load.801</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d12">[16.666666666666668, 16.666666666666668, 16.666666666666668]</data>
+      <data key="d13">2.4017771198288433</data>
+      <data key="d14">NO</data>
+      <data key="d15">801</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[10.0, 10.0, 10.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "801", "phases" =&gt; "3", "bus1" =&gt; "801", "kw" =&gt; "200.0", "model" =&gt; "1", "conn" =&gt; "wye", "kv" =&gt; "4.16", "kvar" =&gt; "120.0", "daily" =&gt; "microgrid1c")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1c", "pd_nom" =&gt; "microgrid1c")</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n34">
+      <data key="d0">load.670c</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[3]</data>
+      <data key="d12">[117.0]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">670</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[68.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "670c", "bus1" =&gt; "670.3", "phases" =&gt; "1", "kw" =&gt; "117", "model" =&gt; "1", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "kvar" =&gt; "68")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n35">
+      <data key="d0">load.611</data>
+      <data key="d10">CURRENT</data>
+      <data key="d11">[3]</data>
+      <data key="d12">[170.0]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">611</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[80.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "611", "bus1" =&gt; "611.3", "phases" =&gt; "1", "kw" =&gt; "170", "model" =&gt; "5", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "kvar" =&gt; "80")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n36">
+      <data key="d0">load.645</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[2]</data>
+      <data key="d12">[170.0]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">645</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[125.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "645", "bus1" =&gt; "645.2", "phases" =&gt; "1", "kw" =&gt; "170", "model" =&gt; "1", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "kvar" =&gt; "125")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n37">
+      <data key="d0">load.634c</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[3]</data>
+      <data key="d12">[120.0]</data>
+      <data key="d13">0.277</data>
+      <data key="d14">NO</data>
+      <data key="d15">634</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[90.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "634c", "bus1" =&gt; "634.3", "phases" =&gt; "1", "kw" =&gt; "120", "model" =&gt; "1", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "0.277", "vminpu" =&gt; "0.6", "kvar" =&gt; "90")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n38">
+      <data key="d0">load.703</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d12">[11.25, 11.25, 11.25]</data>
+      <data key="d13">2.4017771198288433</data>
+      <data key="d14">NO</data>
+      <data key="d15">703</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[8.333333333333334, 8.333333333333334, 8.333333333333334]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "703", "phases" =&gt; "3", "bus1" =&gt; "703.1.2.3", "kw" =&gt; "135", "model" =&gt; "1", "conn" =&gt; "wye", "kv" =&gt; "4.16", "kvar" =&gt; "100", "daily" =&gt; "microgrid1a")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1a", "pd_nom" =&gt; "microgrid1a")</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n39">
+      <data key="d0">load.670b</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[2]</data>
+      <data key="d12">[66.0]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">670</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[38.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "670b", "bus1" =&gt; "670.2", "phases" =&gt; "1", "kw" =&gt; "66", "model" =&gt; "1", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "kvar" =&gt; "38")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n40">
+      <data key="d0">load.634b</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[2]</data>
+      <data key="d12">[120.0]</data>
+      <data key="d13">0.277</data>
+      <data key="d14">NO</data>
+      <data key="d15">634</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[90.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "634b", "bus1" =&gt; "634.2", "phases" =&gt; "1", "kw" =&gt; "120", "model" =&gt; "1", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "0.277", "vminpu" =&gt; "0.6", "kvar" =&gt; "90")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n41">
+      <data key="d0">load.675c</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[3]</data>
+      <data key="d12">[116.0]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">675</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[84.80000000000001]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("model" =&gt; "1", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "daily" =&gt; "microgrid1d", "name" =&gt; "675c", "bus1" =&gt; "675.3", "phases" =&gt; "1", "kw" =&gt; "290", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kvar" =&gt; "212")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1d", "pd_nom" =&gt; "microgrid1d")</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n42">
+      <data key="d0">load.692</data>
+      <data key="d10">CURRENT</data>
+      <data key="d11">[3, 1]</data>
+      <data key="d12">[68.0]</data>
+      <data key="d13">4.16</data>
+      <data key="d14">NO</data>
+      <data key="d15">692</data>
+      <data key="d16">DELTA</data>
+      <data key="d17">[60.400000000000006]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("model" =&gt; "5", "kv" =&gt; "4.16", "vminpu" =&gt; "0.6", "daily" =&gt; "microgrid1d", "name" =&gt; "692", "bus1" =&gt; "692.3.1", "phases" =&gt; "1", "kw" =&gt; "170", "conn" =&gt; "delta", "vmaxpu" =&gt; "1.4", "kvar" =&gt; "151")</data>
+      <data key="d7">load</data>
+      <data key="d20">Dict{String, Any}("qd_nom" =&gt; "microgrid1d", "pd_nom" =&gt; "microgrid1d")</data>
+    </node>
+    <node id="n43">
+      <data key="d0">load.670a</data>
+      <data key="d10">POWER</data>
+      <data key="d11">[1]</data>
+      <data key="d12">[17.0]</data>
+      <data key="d13">2.4</data>
+      <data key="d14">NO</data>
+      <data key="d15">670</data>
+      <data key="d16">WYE</data>
+      <data key="d17">[10.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "670a", "bus1" =&gt; "670.1", "phases" =&gt; "1", "kw" =&gt; "17", "model" =&gt; "1", "conn" =&gt; "wye", "vmaxpu" =&gt; "1.4", "kv" =&gt; "2.4", "vminpu" =&gt; "0.6", "kvar" =&gt; "10")</data>
+      <data key="d7">load</data>
+      <data key="d19">2.0</data>
+    </node>
+    <node id="n44">
+      <data key="d0">load.646</data>
+      <data key="d10">IMPEDANCE</data>
+      <data key="d11">[2, 3]</data>
+      <data key="d12">[230.0]</data>
+      <data key="d13">4.16</data>
+      <data key="d14">NO</data>
+      <data key="d15">646</data>
+      <data key="d16">DELTA</data>
+      <data key="d17">[132.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "646", "bus1" =&gt; "646.2.3", "phases" =&gt; "1", "kw" =&gt; "230", "model" =&gt; "2", "conn" =&gt; "delta", "vmaxpu" =&gt; "1.4", "kv" =&gt; "4.16", "vminpu" =&gt; "0.6", "kvar" =&gt; "132")</data>
+      <data key="d7">load</data>
+    </node>
+    <node id="n45">
+      <data key="d0">capacitor.cap1</data>
+      <data key="d10">CAPACITOR</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d14">NO</data>
+      <data key="d15">675</data>
+      <data key="d16">WYE</data>
+      <data key="d3">ENABLED</data>
+      <data key="d21">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "cap1", "bus1" =&gt; "675", "phases" =&gt; "3", "kv" =&gt; "4.16", "kvar" =&gt; "600")</data>
+      <data key="d7">shunt</data>
+      <data key="d22">Real[0.03467085798816568 0.0 0.0; 0.0 0.03467085798816568 0.0; 0.0 0.0 0.03467085798816568]</data>
+    </node>
+    <node id="n46">
+      <data key="d0">capacitor.cap2</data>
+      <data key="d10">CAPACITOR</data>
+      <data key="d11">[3]</data>
+      <data key="d14">NO</data>
+      <data key="d15">611</data>
+      <data key="d16">WYE</data>
+      <data key="d3">ENABLED</data>
+      <data key="d21">[0.0;;]</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "cap2", "bus1" =&gt; "611.3", "phases" =&gt; "1", "kv" =&gt; "2.4", "kvar" =&gt; "100")</data>
+      <data key="d7">shunt</data>
+      <data key="d22">Real[0.017361111111111112;;]</data>
+    </node>
+    <node id="n47">
+      <data key="d23">[1.3856406460551018, 1.3856406460551018, 1.3856406460551018]</data>
+      <data key="d24">[800.0, 800.0, 800.0]</data>
+      <data key="d25">3</data>
+      <data key="d0">generator.675</data>
+      <data key="d26">[500.0, 500.0, 500.0]</data>
+      <data key="d27">[-800.0, -800.0, -800.0]</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d28">[0.0, 0.0, 0.0]</data>
+      <data key="d15">675</data>
+      <data key="d16">WYE</data>
+      <data key="d29">[400.0, 400.0, 400.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d30">GRID_FORMING</data>
+      <data key="d31">[500.0, 500.0, 500.0]</data>
+      <data key="d32">FREQUENCYDROOP</data>
+      <data key="d18">Dict{String, Any}("kva" =&gt; "2000", "name" =&gt; "675", "phases" =&gt; "3", "bus1" =&gt; "675", "kw" =&gt; "1500", "kv" =&gt; "2.4", "kvar" =&gt; "1200")</data>
+      <data key="d7">generator</data>
+    </node>
+    <node id="n48">
+      <data key="d23">[2.4017771198288433, 2.4017771198288433, 2.4017771198288433]</data>
+      <data key="d24">[0.0, 0.0, 0.0]</data>
+      <data key="d0">pvsystem.pv_mg1b</data>
+      <data key="d33">[0.0, 0.0]</data>
+      <data key="d26">[0.0, 0.0, 0.0]</data>
+      <data key="d27">[-7.847080136373443, -7.847080136373443, -7.847080136373443]</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d28">[0.0, 0.0, 0.0]</data>
+      <data key="d15">700</data>
+      <data key="d16">WYE</data>
+      <data key="d29">[0.0, 0.0, 0.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d30">GRID_FOLLOWING</data>
+      <data key="d31">[0.0, 0.0, 0.0]</data>
+      <data key="d18">Dict{String, Any}("kva" =&gt; "35", "name" =&gt; "pv_mg1b", "phases" =&gt; "3", "bus1" =&gt; "700.1.2.3", "irradiance" =&gt; "1", "pmpp" =&gt; "25", "conn" =&gt; "wye", "kv" =&gt; "4.16", "pf" =&gt; "0.74", "daily" =&gt; "pvdaily")</data>
+      <data key="d7">solar</data>
+      <data key="d20">Dict{String, Any}("qg_ub" =&gt; "pvdaily", "qg" =&gt; "pvdaily", "pg" =&gt; "pvdaily", "pg_ub" =&gt; "pvdaily")</data>
+      <data key="d34">2</data>
+    </node>
+    <node id="n49">
+      <data key="d23">[2.4017771198288433, 2.4017771198288433, 2.4017771198288433]</data>
+      <data key="d24">[0.0, 0.0, 0.0]</data>
+      <data key="d0">pvsystem.pv_mg1a</data>
+      <data key="d33">[0.0, 0.0]</data>
+      <data key="d26">[0.0, 0.0, 0.0]</data>
+      <data key="d27">[-47.08248081824067, -47.08248081824067, -47.08248081824067]</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d28">[0.0, 0.0, 0.0]</data>
+      <data key="d15">703</data>
+      <data key="d16">WYE</data>
+      <data key="d29">[0.0, 0.0, 0.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d30">GRID_FOLLOWING</data>
+      <data key="d31">[0.0, 0.0, 0.0]</data>
+      <data key="d18">Dict{String, Any}("kva" =&gt; "210", "name" =&gt; "pv_mg1a", "phases" =&gt; "3", "bus1" =&gt; "703.1.2.3", "irradiance" =&gt; "1", "pmpp" =&gt; "25", "conn" =&gt; "wye", "kv" =&gt; "4.16", "pf" =&gt; "0.74", "daily" =&gt; "pvdaily")</data>
+      <data key="d7">solar</data>
+      <data key="d20">Dict{String, Any}("qg_ub" =&gt; "pvdaily", "qg" =&gt; "pvdaily", "pg" =&gt; "pvdaily", "pg_ub" =&gt; "pvdaily")</data>
+      <data key="d34">2</data>
+    </node>
+    <node id="n50">
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d35">25.0</data>
+      <data key="d36">0.0</data>
+      <data key="d15">700</data>
+      <data key="d37">50.0</data>
+      <data key="d16">WYE</data>
+      <data key="d38">200.0</data>
+      <data key="d39">-0.0</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("kwrated" =&gt; "50", "name" =&gt; "battery_mg1a", "bus1" =&gt; "700", "kwhstored" =&gt; "25", "kwhrated" =&gt; "200", "%charge" =&gt; "100", "%idlingkw" =&gt; "0", "phases" =&gt; "3", "%effdischarge" =&gt; "100", "%r" =&gt; "0", "%x" =&gt; "0", "%idlingkvar" =&gt; "0", "%discharge" =&gt; "100", "%effcharge" =&gt; "100", "enabled" =&gt; "y")</data>
+      <data key="d40">0.0</data>
+      <data key="d41">50.0</data>
+      <data key="d0">storage.battery_mg1a</data>
+      <data key="d42">-50.0</data>
+      <data key="d43">0.0</data>
+      <data key="d44">0.0</data>
+      <data key="d45">100.0</data>
+      <data key="d46">50.0</data>
+      <data key="d47">-0.0</data>
+      <data key="d48">0.0</data>
+      <data key="d30">GRID_FORMING</data>
+      <data key="d49">100.0</data>
+      <data key="d7">storage</data>
+      <data key="d50">50.0</data>
+    </node>
+    <node id="n51">
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d35">500.0</data>
+      <data key="d36">0.0</data>
+      <data key="d15">801</data>
+      <data key="d37">250.0</data>
+      <data key="d16">WYE</data>
+      <data key="d38">1000.0</data>
+      <data key="d39">-0.0</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("kwrated" =&gt; "250", "name" =&gt; "battery_mg1c", "bus1" =&gt; "801", "kwhstored" =&gt; "500", "kwhrated" =&gt; "1000", "%charge" =&gt; "100", "%idlingkw" =&gt; "0", "phases" =&gt; "3", "%effdischarge" =&gt; "100", "%r" =&gt; "0", "%x" =&gt; "0", "%idlingkvar" =&gt; "0", "%discharge" =&gt; "100", "%effcharge" =&gt; "100", "enabled" =&gt; "y")</data>
+      <data key="d40">0.0</data>
+      <data key="d41">250.0</data>
+      <data key="d0">storage.battery_mg1c</data>
+      <data key="d42">-250.0</data>
+      <data key="d43">0.0</data>
+      <data key="d44">0.0</data>
+      <data key="d45">100.0</data>
+      <data key="d46">250.0</data>
+      <data key="d47">-0.0</data>
+      <data key="d48">0.0</data>
+      <data key="d30">GRID_FORMING</data>
+      <data key="d49">100.0</data>
+      <data key="d7">storage</data>
+      <data key="d50">250.0</data>
+    </node>
+    <node id="n52">
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d35">5.0</data>
+      <data key="d36">0.0</data>
+      <data key="d15">700</data>
+      <data key="d37">10.0</data>
+      <data key="d16">WYE</data>
+      <data key="d38">50.0</data>
+      <data key="d39">-0.0</data>
+      <data key="d3">ENABLED</data>
+      <data key="d18">Dict{String, Any}("kwrated" =&gt; "10", "name" =&gt; "battery_mg1b", "bus1" =&gt; "700", "kwhstored" =&gt; "5", "kwhrated" =&gt; "50", "%charge" =&gt; "100", "%idlingkw" =&gt; "0", "phases" =&gt; "3", "%effdischarge" =&gt; "100", "%r" =&gt; "0", "%x" =&gt; "0", "%idlingkvar" =&gt; "0", "%discharge" =&gt; "100", "%effcharge" =&gt; "100", "enabled" =&gt; "y")</data>
+      <data key="d40">0.0</data>
+      <data key="d41">10.0</data>
+      <data key="d0">storage.battery_mg1b</data>
+      <data key="d42">-10.0</data>
+      <data key="d43">0.0</data>
+      <data key="d44">0.0</data>
+      <data key="d45">100.0</data>
+      <data key="d46">10.0</data>
+      <data key="d47">-0.0</data>
+      <data key="d48">0.0</data>
+      <data key="d30">GRID_FORMING</data>
+      <data key="d49">100.0</data>
+      <data key="d7">storage</data>
+      <data key="d50">10.0</data>
+    </node>
+    <node id="n53">
+      <data key="d0">vsource.source</data>
+      <data key="d27">[0.0, 0.0, 0.0]</data>
+      <data key="d11">[1, 2, 3]</data>
+      <data key="d28">[0.0, 0.0, 0.0]</data>
+      <data key="d36">[0.6072747351597361 -0.034231993061364596 -0.034231993061364596; -0.034231993061364596 0.6072747351597361 -0.034231993061364596; -0.034231993061364596 -0.034231993061364596 0.6072747351597361]</data>
+      <data key="d15">sourcebus</data>
+      <data key="d16">WYE</data>
+      <data key="d48">[0.16678564904096196 0.006408966985686826 0.006408966985686826; 0.006408966985686826 0.16678564904096196 0.006408966985686826; 0.006408966985686826 0.006408966985686826 0.16678564904096196]</data>
+      <data key="d51">[29.999999999999996, -90.0, 150.0]</data>
+      <data key="d3">ENABLED</data>
+      <data key="d52">[66.40192048490265, 66.40192048490265, 66.40192048490265]</data>
+      <data key="d18">Dict{String, Any}("name" =&gt; "source", "phases" =&gt; "3", "bus1" =&gt; "sourcebus", "pu" =&gt; "1.0001", "mvasc1" =&gt; "21000", "basemva" =&gt; "1", "angle" =&gt; "30", "mvasc3" =&gt; "20000", "basekv" =&gt; "115")</data>
+      <data key="d7">voltage_source</data>
+    </node>
+    <edge id="e0" source="n16" target="n23">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">203.3016</data>
+      <data key="d58">632670</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "667", "name" =&gt; "632670", "phases" =&gt; "3", "bus1" =&gt; "632.1.2.3", "units" =&gt; "ft", "emergamps" =&gt; "800", "linecode" =&gt; "mtx601", "normamps" =&gt; "800", "bus2" =&gt; "670.1.2.3")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.632670</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">632</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">670</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d71">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d72">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d73">mtx601</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e1" source="n11" target="n6">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">243.84</data>
+      <data key="d58">700701</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "800", "name" =&gt; "700701", "phases" =&gt; "3", "bus1" =&gt; "700.1.2.3", "units" =&gt; "ft", "linecode" =&gt; "mtx601", "bus2" =&gt; "701.1.2.3")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.700701</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">700</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">701</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d71">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d72">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d73">mtx601</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e2" source="n16" target="n15">
+      <data key="d53">[Inf, Inf]</data>
+      <data key="d54">[0.0008431616230659293 0.00028527931398744796; 0.00028527931398744796 0.0008370720188902007]</data>
+      <data key="d55">[-5.0, -5.0]</data>
+      <data key="d56">[3, 2]</data>
+      <data key="d57">152.4</data>
+      <data key="d58">632645</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0; 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "500", "name" =&gt; "632645", "phases" =&gt; "2", "bus1" =&gt; "632.3.2", "units" =&gt; "ft", "linecode" =&gt; "mtx603", "bus2" =&gt; "645.3.2")</data>
+      <data key="d62">[0.0 0.0; 0.0 0.0]</data>
+      <data key="d63">line.632645</data>
+      <data key="d64">[3, 2]</data>
+      <data key="d65">632</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0]</data>
+      <data key="d68">645</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.0008225936742683155 0.00012837879823525758; 0.00012837879823525758 0.0008260734480830174]</data>
+      <data key="d71">[0.0008225936742683155 0.00012837879823525758; 0.00012837879823525758 0.0008260734480830174]</data>
+      <data key="d72">[0.0008431616230659293 0.00028527931398744796; 0.00028527931398744796 0.0008370720188902007]</data>
+      <data key="d73">mtx603</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e3" source="n20" target="n14">
+      <data key="d53">[Inf]</data>
+      <data key="d54">[0.0008373205741626794;;]</data>
+      <data key="d55">[-5.0]</data>
+      <data key="d56">[3]</data>
+      <data key="d57">91.44</data>
+      <data key="d58">684611</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0;;]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "300", "name" =&gt; "684611", "phases" =&gt; "1", "bus1" =&gt; "684.3", "units" =&gt; "ft", "linecode" =&gt; "mtx605", "bus2" =&gt; "611.3")</data>
+      <data key="d62">[0.0;;]</data>
+      <data key="d63">line.684611</data>
+      <data key="d64">[3]</data>
+      <data key="d65">684</data>
+      <data key="d66">[0.0010563599080345492;;]</data>
+      <data key="d67">[5.0]</data>
+      <data key="d68">611</data>
+      <data key="d69">[0.0010563599080345492;;]</data>
+      <data key="d70">[0.0008259491704467781;;]</data>
+      <data key="d71">[0.0008259491704467781;;]</data>
+      <data key="d72">[0.0008373205741626794;;]</data>
+      <data key="d73">mtx605</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e4" source="n22" target="n7">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0002723867520039769 1.7202386130615796e-5 -1.1446218852917417e-5; 1.7202386130615796e-5 0.0002465028273162245 1.7202386130615796e-5; -1.1446218852917417e-5 1.7202386130615796e-5 0.0002723867520039769]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">152.4</data>
+      <data key="d58">692675</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "500", "name" =&gt; "692675", "phases" =&gt; "3", "bus1" =&gt; "692.1.2.3", "units" =&gt; "ft", "emergamps" =&gt; "800", "linecode" =&gt; "mtx606", "normamps" =&gt; "800", "bus2" =&gt; "675.1.2.3")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.692675</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">692</data>
+      <data key="d66">[0.11929037469707326 0.0 0.0; 0.0 0.11929037469707326 0.0; 0.0 0.0 0.11929037469707326]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">675</data>
+      <data key="d69">[0.11929037469707326 0.0 0.0; 0.0 0.11929037469707326 0.0; 0.0 0.0 0.11929037469707326]</data>
+      <data key="d70">[0.0004919660722053067 0.00019789722239483006 0.00017613247996023116; 0.00019789722239483006 0.0004857074504442926 0.00019789722239483006; 0.00017613247996023116 0.00019789722239483006 0.0004919660722053067]</data>
+      <data key="d71">[0.0004919660722053067 0.00019789722239483006 0.00017613247996023116; 0.00019789722239483006 0.0004857074504442926 0.00019789722239483006; 0.00017613247996023116 0.00019789722239483006 0.0004919660722053067]</data>
+      <data key="d72">[0.0002723867520039769 1.7202386130615796e-5 -1.1446218852917417e-5; 1.7202386130615796e-5 0.0002465028273162245 1.7202386130615796e-5; -1.1446218852917417e-5 1.7202386130615796e-5 0.0002723867520039769]</data>
+      <data key="d73">mtx606</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e5" source="n7" target="n17">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">24139.5</data>
+      <data key="d58">675675aux</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "15", "name" =&gt; "675675aux", "phases" =&gt; "3", "bus1" =&gt; "675", "units" =&gt; "mi", "emergamps" =&gt; "800", "linecode" =&gt; "mtx601", "normamps" =&gt; "800", "bus2" =&gt; "675aux")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.675675aux</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">675</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">675aux</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d71">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d72">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d73">mtx601</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e6" source="n1" target="n20">
+      <data key="d53">[Inf, Inf]</data>
+      <data key="d54">[0.0008431616230659293 0.00028527931398744796; 0.00028527931398744796 0.0008370720188902007]</data>
+      <data key="d55">[-5.0, -5.0]</data>
+      <data key="d56">[1, 3]</data>
+      <data key="d57">91.44</data>
+      <data key="d58">671684</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0; 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "300", "name" =&gt; "671684", "phases" =&gt; "2", "bus1" =&gt; "671.1.3", "units" =&gt; "ft", "linecode" =&gt; "mtx604", "bus2" =&gt; "684.1.3")</data>
+      <data key="d62">[0.0 0.0; 0.0 0.0]</data>
+      <data key="d63">line.671684</data>
+      <data key="d64">[1, 3]</data>
+      <data key="d65">671</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0]</data>
+      <data key="d68">684</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.0008225936742683155 0.00012837879823525758; 0.00012837879823525758 0.0008260734480830174]</data>
+      <data key="d71">[0.0008225936742683155 0.00012837879823525758; 0.00012837879823525758 0.0008260734480830174]</data>
+      <data key="d72">[0.0008431616230659293 0.00028527931398744796; 0.00028527931398744796 0.0008370720188902007]</data>
+      <data key="d73">mtx604</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e7" source="n15" target="n0">
+      <data key="d53">[Inf, Inf]</data>
+      <data key="d54">[0.0008431616230659293 0.00028527931398744796; 0.00028527931398744796 0.0008370720188902007]</data>
+      <data key="d55">[-5.0, -5.0]</data>
+      <data key="d56">[3, 2]</data>
+      <data key="d57">91.44</data>
+      <data key="d58">645646</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0; 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "300", "name" =&gt; "645646", "phases" =&gt; "2", "bus1" =&gt; "645.3.2", "units" =&gt; "ft", "linecode" =&gt; "mtx603", "bus2" =&gt; "646.3.2")</data>
+      <data key="d62">[0.0 0.0; 0.0 0.0]</data>
+      <data key="d63">line.645646</data>
+      <data key="d64">[3, 2]</data>
+      <data key="d65">645</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0]</data>
+      <data key="d68">646</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.0008225936742683155 0.00012837879823525758; 0.00012837879823525758 0.0008260734480830174]</data>
+      <data key="d71">[0.0008225936742683155 0.00012837879823525758; 0.00012837879823525758 0.0008260734480830174]</data>
+      <data key="d72">[0.0008431616230659293 0.00028527931398744796; 0.00028527931398744796 0.0008370720188902007]</data>
+      <data key="d73">mtx603</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e8" source="n10" target="n16">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">609.6</data>
+      <data key="d58">650632</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "2000", "name" =&gt; "650632", "phases" =&gt; "3", "bus1" =&gt; "600.1.2.3", "units" =&gt; "ft", "emergamps" =&gt; "800", "linecode" =&gt; "mtx601", "normamps" =&gt; "800", "bus2" =&gt; "632.1.2.3")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.650632</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">600</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">632</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d71">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d72">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d73">mtx601</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e9" source="n24" target="n2">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">304.8</data>
+      <data key="d58">800800aux</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "1000", "name" =&gt; "800800aux", "phases" =&gt; "3", "bus1" =&gt; "800aux", "units" =&gt; "ft", "linecode" =&gt; "mtx601", "bus2" =&gt; "800")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.800800aux</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">800aux</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">800</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d71">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d72">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d73">mtx601</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e10" source="n8" target="n18">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">274.32</data>
+      <data key="d58">702703</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "900", "name" =&gt; "702703", "phases" =&gt; "3", "bus1" =&gt; "702.1.2.3", "units" =&gt; "ft", "linecode" =&gt; "mtx601", "bus2" =&gt; "703.1.2.3")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.702703</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">702</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">703</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d71">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d72">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d73">mtx601</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e11" source="n1" target="n3">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">304.8</data>
+      <data key="d58">671680</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "1000", "name" =&gt; "671680", "phases" =&gt; "3", "bus1" =&gt; "671.1.2.3", "units" =&gt; "ft", "emergamps" =&gt; "800", "linecode" =&gt; "mtx601", "normamps" =&gt; "800", "bus2" =&gt; "680.1.2.3")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.671680</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">671</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">680</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d71">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d72">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d73">mtx601</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e12" source="n16" target="n19">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0007341079972658921 0.00026322003355496175 0.0003117504505064314; 0.00026322003355496175 0.0007446094575281177 0.00023917231094264588; 0.0003117504505064314 0.00023917231094264588 0.0007526253650655565]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">152.4</data>
+      <data key="d58">632633</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "500", "name" =&gt; "632633", "phases" =&gt; "3", "bus1" =&gt; "632.1.2.3", "units" =&gt; "ft", "linecode" =&gt; "mtx602", "bus2" =&gt; "633.1.2.3")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.632633</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">632</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">633</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.00046765674516870695 9.81793326290934e-5 9.693655626669981e-5; 9.81793326290934e-5 0.0004644876654446033 9.538308581370783e-5; 9.693655626669981e-5 9.538308581370783e-5 0.0004620642515379358]</data>
+      <data key="d71">[0.00046765674516870695 9.81793326290934e-5 9.693655626669981e-5; 9.81793326290934e-5 0.0004644876654446033 9.538308581370783e-5; 9.693655626669981e-5 9.538308581370783e-5 0.0004620642515379358]</data>
+      <data key="d72">[0.0007341079972658921 0.00026322003355496175 0.0003117504505064314; 0.00026322003355496175 0.0007446094575281177 0.00023917231094264588; 0.0003117504505064314 0.00023917231094264588 0.0007526253650655565]</data>
+      <data key="d73">mtx602</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e13" source="n20" target="n4">
+      <data key="d53">[Inf]</data>
+      <data key="d54">[0.00031839930404523704;;]</data>
+      <data key="d55">[-5.0]</data>
+      <data key="d56">[1]</data>
+      <data key="d57">243.84</data>
+      <data key="d58">684652</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0;;]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "800", "name" =&gt; "684652", "phases" =&gt; "1", "bus1" =&gt; "684.1", "units" =&gt; "ft", "linecode" =&gt; "mtx607", "bus2" =&gt; "652.1")</data>
+      <data key="d62">[0.0;;]</data>
+      <data key="d63">line.684652</data>
+      <data key="d64">[1]</data>
+      <data key="d65">684</data>
+      <data key="d66">[0.07332380538122166;;]</data>
+      <data key="d67">[5.0]</data>
+      <data key="d68">652</data>
+      <data key="d69">[0.07332380538122166;;]</data>
+      <data key="d70">[0.0008342136332566954;;]</data>
+      <data key="d71">[0.0008342136332566954;;]</data>
+      <data key="d72">[0.00031839930404523704;;]</data>
+      <data key="d73">mtx607</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e14" source="n23" target="n1">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d55">[-5.0, -5.0, -5.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d57">406.2984</data>
+      <data key="d58">670671</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("length" =&gt; "1333", "name" =&gt; "670671", "phases" =&gt; "3", "bus1" =&gt; "670.1.2.3", "units" =&gt; "ft", "emergamps" =&gt; "800", "linecode" =&gt; "mtx601", "normamps" =&gt; "800", "bus2" =&gt; "671.1.2.3")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.670671</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">670</data>
+      <data key="d66">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d67">[5.0, 5.0, 5.0]</data>
+      <data key="d68">671</data>
+      <data key="d69">[0.0008699434536755112 -0.00018641645435903812 -0.00018641645435903812; -0.00018641645435903812 0.0008699434536755112 -0.00018641645435903812; -0.00018641645435903812 -0.00018641645435903812 0.0008699434536755112]</data>
+      <data key="d70">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d71">[0.000215311004784689 9.693655626669981e-5 9.81793326290934e-5; 9.693655626669981e-5 0.00020971851115391787 9.538308581370783e-5; 9.81793326290934e-5 9.538308581370783e-5 0.00021214192506058534]</data>
+      <data key="d72">[0.0006325110296402163 0.0003117504505064314 0.00026322003355496175; 0.0003117504505064314 0.0006510905362580005 0.00023917231094264588; 0.00026322003355496175 0.00023917231094264588 0.0006430124899024421]</data>
+      <data key="d73">mtx601</data>
+      <data key="d74">line</data>
+    </edge>
+    <edge id="e15" source="n13" target="n10">
+      <data key="d53">[1000.0, 1000.0, 1000.0]</data>
+      <data key="d54">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d75">CLOSED</data>
+      <data key="d57">0.001</data>
+      <data key="d58">cb_101</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("c1" =&gt; "0.000", "x0" =&gt; "0.000", "bus2" =&gt; "600", "length" =&gt; "0.001", "name" =&gt; "cb_101", "bus1" =&gt; "rg60", "switch" =&gt; "y", "phases" =&gt; "3", "emergamps" =&gt; "1000", "units" =&gt; "none", "x1" =&gt; "0.000", "r1" =&gt; "0", "r0" =&gt; "0", "c0" =&gt; "0.000", "normamps" =&gt; "800")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.cb_101</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">rg60</data>
+      <data key="d66">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d76">YES</data>
+      <data key="d68">600</data>
+      <data key="d69">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d70">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d71">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d72">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d74">switch</data>
+    </edge>
+    <edge id="e16" source="n12" target="n17">
+      <data key="d53">[25.0, 25.0, 25.0]</data>
+      <data key="d54">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d75">OPEN</data>
+      <data key="d57">0.001</data>
+      <data key="d58">801675</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("c1" =&gt; "0.0", "x0" =&gt; "0", "bus2" =&gt; "675aux", "length" =&gt; "0.001", "name" =&gt; "801675", "bus1" =&gt; "801", "switch" =&gt; "y", "phases" =&gt; "3", "emergamps" =&gt; "50", "units" =&gt; "none", "x1" =&gt; "0", "r1" =&gt; "0", "r0" =&gt; "0", "c0" =&gt; "0.0", "enabled" =&gt; "n", "normamps" =&gt; "50")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.801675</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">801</data>
+      <data key="d66">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d76">YES</data>
+      <data key="d68">675aux</data>
+      <data key="d69">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d70">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d71">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d72">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d74">switch</data>
+    </edge>
+    <edge id="e17" source="n1" target="n22">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d75">OPEN</data>
+      <data key="d57">0.001</data>
+      <data key="d58">671692</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("c1" =&gt; "0.000", "x0" =&gt; "0.000", "bus2" =&gt; "692", "length" =&gt; "0.001", "name" =&gt; "671692", "bus1" =&gt; "671", "switch" =&gt; "y", "phases" =&gt; "3", "emergamps" =&gt; "1000", "units" =&gt; "none", "x1" =&gt; "0.000", "r1" =&gt; "0", "r0" =&gt; "0", "c0" =&gt; "0.000", "normamps" =&gt; "800")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.671692</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">671</data>
+      <data key="d66">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d76">YES</data>
+      <data key="d68">692</data>
+      <data key="d69">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d70">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d71">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d72">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d74">switch</data>
+    </edge>
+    <edge id="e18" source="n23" target="n11">
+      <data key="d53">[600.0, 600.0, 600.0]</data>
+      <data key="d54">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d75">CLOSED</data>
+      <data key="d57">0.001</data>
+      <data key="d58">670700</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("c1" =&gt; "0.000", "x0" =&gt; "0.000", "bus2" =&gt; "700", "length" =&gt; "0.001", "name" =&gt; "670700", "bus1" =&gt; "670", "switch" =&gt; "y", "phases" =&gt; "3", "units" =&gt; "none", "x1" =&gt; "0.000", "r1" =&gt; "0", "r0" =&gt; "0", "c0" =&gt; "0.000", "enabled" =&gt; "y")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.670700</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">670</data>
+      <data key="d66">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d76">YES</data>
+      <data key="d68">700</data>
+      <data key="d69">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d70">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d71">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d72">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d74">switch</data>
+    </edge>
+    <edge id="e19" source="n3" target="n7">
+      <data key="d53">[1000.0, 1000.0, 1000.0]</data>
+      <data key="d54">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d75">CLOSED</data>
+      <data key="d57">0.001</data>
+      <data key="d58">680675</data>
+      <data key="d59">DISABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("c1" =&gt; "0.000", "x0" =&gt; "0.000", "bus2" =&gt; "675", "length" =&gt; "0.001", "name" =&gt; "680675", "bus1" =&gt; "680", "switch" =&gt; "y", "phases" =&gt; "3", "emergamps" =&gt; "1000", "units" =&gt; "none", "x1" =&gt; "0.000", "r1" =&gt; "0", "r0" =&gt; "0", "c0" =&gt; "0.000", "enabled" =&gt; "n", "normamps" =&gt; "800")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.680675</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">680</data>
+      <data key="d66">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d76">YES</data>
+      <data key="d68">675</data>
+      <data key="d69">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d70">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d71">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d72">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d74">switch</data>
+    </edge>
+    <edge id="e20" source="n18" target="n24">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d75">OPEN</data>
+      <data key="d57">0.001</data>
+      <data key="d58">703800</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("c1" =&gt; "0", "x0" =&gt; "0", "bus2" =&gt; "800aux", "length" =&gt; "0.001", "name" =&gt; "703800", "bus1" =&gt; "703", "switch" =&gt; "y", "phases" =&gt; "3", "emergamps" =&gt; "600", "units" =&gt; "none", "x1" =&gt; "0", "r1" =&gt; "0", "r0" =&gt; "0", "c0" =&gt; "0", "enabled" =&gt; "y", "normamps" =&gt; "600")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.703800</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">703</data>
+      <data key="d66">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d76">YES</data>
+      <data key="d68">800aux</data>
+      <data key="d69">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d70">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d71">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d72">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d74">switch</data>
+    </edge>
+    <edge id="e21" source="n2" target="n12">
+      <data key="d53">[25.0, 25.0, 25.0]</data>
+      <data key="d54">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d75">OPEN</data>
+      <data key="d57">0.001</data>
+      <data key="d58">800801</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("c1" =&gt; "0", "x0" =&gt; "0", "bus2" =&gt; "801", "length" =&gt; "0.001", "name" =&gt; "800801", "bus1" =&gt; "800", "switch" =&gt; "y", "phases" =&gt; "3", "emergamps" =&gt; "50", "units" =&gt; "none", "x1" =&gt; "0", "r1" =&gt; "0", "r0" =&gt; "0", "c0" =&gt; "0", "enabled" =&gt; "y", "normamps" =&gt; "50")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.800801</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">800</data>
+      <data key="d66">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d76">YES</data>
+      <data key="d68">801</data>
+      <data key="d69">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d70">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d71">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d72">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d74">switch</data>
+    </edge>
+    <edge id="e22" source="n6" target="n8">
+      <data key="d53">[Inf, Inf, Inf]</data>
+      <data key="d54">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d56">[1, 2, 3]</data>
+      <data key="d75">OPEN</data>
+      <data key="d57">0.001</data>
+      <data key="d58">701702</data>
+      <data key="d59">ENABLED</data>
+      <data key="d60">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d61">Dict{String, Any}("c1" =&gt; "0.000", "x0" =&gt; "0.000", "bus2" =&gt; "702", "length" =&gt; "0.001", "name" =&gt; "701702", "bus1" =&gt; "701", "switch" =&gt; "y", "phases" =&gt; "3", "units" =&gt; "none", "x1" =&gt; "0.000", "r1" =&gt; "0", "r0" =&gt; "0", "c0" =&gt; "0.000", "enabled" =&gt; "y")</data>
+      <data key="d62">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d63">line.701702</data>
+      <data key="d64">[1, 2, 3]</data>
+      <data key="d65">701</data>
+      <data key="d66">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d76">YES</data>
+      <data key="d68">702</data>
+      <data key="d69">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d70">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d71">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d72">[0.0 0.0 0.0; 0.0 0.0 0.0; 0.0 0.0 0.0]</data>
+      <data key="d74">switch</data>
+    </edge>
+    <edge id="e23" source="n19" target="n5">
+      <data key="d77">[1, 1]</data>
+      <data key="d78">[500.0, 500.0]</data>
+      <data key="d79">[[0.9, 0.9, 0.9], [0.9, 0.9, 0.9]]</data>
+      <data key="d80">[[1, 2, 3], [1, 2, 3]]</data>
+      <data key="d81">[[1.0, 1.0, 1.0], [1.0, 1.0, 1.0]]</data>
+      <data key="d82">[[0.03125, 0.03125, 0.03125], [0.03125, 0.03125, 0.03125]]</data>
+      <data key="d83">["633", "634"]</data>
+      <data key="d84">PowerModelsDistribution.ConnConfig[PowerModelsDistribution.WYE, PowerModelsDistribution.WYE]</data>
+      <data key="d58">xfm1</data>
+      <data key="d59">ENABLED</data>
+      <data key="d85">0.0</data>
+      <data key="d61">Dict{String, Any}("wdg" =&gt; "2", "kv" =&gt; "0.480", "bus" =&gt; "634", "xht" =&gt; "1", "name" =&gt; "xfm1", "xhl" =&gt; "2", "phases" =&gt; "3", "%r" =&gt; ".55", "windings" =&gt; "2", "kva" =&gt; "500", "conn" =&gt; "wye", "xlt" =&gt; "1")</data>
+      <data key="d86">0.0</data>
+      <data key="d87">[0.02]</data>
+      <data key="d63">transformer.xfm1</data>
+      <data key="d88">25000.0</data>
+      <data key="d89">[0.0055000000000000005, 0.0055000000000000005]</data>
+      <data key="d90">Vector{Bool}[[1, 1, 1], [1, 1, 1]]</data>
+      <data key="d91">[4.16, 0.48]</data>
+      <data key="d92">[[1.1, 1.1, 1.1], [1.1, 1.1, 1.1]]</data>
+      <data key="d74">transformer</data>
+    </edge>
+    <edge id="e24" source="n9" target="n13">
+      <data key="d77">[1, 1]</data>
+      <data key="d78">[1666.0, 1666.0]</data>
+      <data key="d79">[[0.9], [0.9]]</data>
+      <data key="d80">[[1], [1]]</data>
+      <data key="d81">[[1.0], [1.0625]]</data>
+      <data key="d82">[[0.03125], [0.03125]]</data>
+      <data key="d83">["650", "rg60"]</data>
+      <data key="d84">PowerModelsDistribution.ConnConfig[PowerModelsDistribution.WYE, PowerModelsDistribution.WYE]</data>
+      <data key="d58">reg1</data>
+      <data key="d59">ENABLED</data>
+      <data key="d93">Dict{String, Any}("ctprim" =&gt; [[0.0], [700.0]], "x" =&gt; [[0.0], [9.0]], "r" =&gt; [[0.0], [3.0]], "ptratio" =&gt; [[0.0], [20.0]], "band" =&gt; [[0.0], [2.0]], "dss" =&gt; Dict{String, Any}("ctprim" =&gt; "700", "name" =&gt; "reg1", "winding" =&gt; "2", "transformer" =&gt; "reg1", "x" =&gt; "9", "r" =&gt; "3", "ptratio" =&gt; "20", "band" =&gt; "2", "vreg" =&gt; "122"), "vreg" =&gt; [[0.0], [122.0]])</data>
+      <data key="d85">0.0</data>
+      <data key="d61">Dict{String, Any}("name" =&gt; "reg1", "phases" =&gt; "1", "xhl" =&gt; "0.01", "kvas" =&gt; "1666 1666", "kvs" =&gt; "2.4  2.4", "%loadloss" =&gt; "0.01", "buses" =&gt; "650.1 rg60.1", "%rs" =&gt; "0 0", "taps" =&gt; "1.0 1.0625", "bank" =&gt; "reg1")</data>
+      <data key="d86">0.0</data>
+      <data key="d87">[0.0001]</data>
+      <data key="d63">transformer.reg1</data>
+      <data key="d88">25000.0</data>
+      <data key="d89">[0.0, 0.0]</data>
+      <data key="d90">Vector{Bool}[[1], [0]]</data>
+      <data key="d91">[2.4, 2.4]</data>
+      <data key="d94">reg1</data>
+      <data key="d92">[[1.1], [1.1]]</data>
+      <data key="d74">transformer</data>
+    </edge>
+    <edge id="e25" source="n21" target="n9">
+      <data key="d77">[1, -1]</data>
+      <data key="d78">[5000.0, 5000.0]</data>
+      <data key="d79">[[0.9, 0.9, 0.9], [0.9, 0.9, 0.9]]</data>
+      <data key="d80">[[1, 2, 3], [2, 3, 1]]</data>
+      <data key="d81">[[1.0, 1.0, 1.0], [1.0, 1.0, 1.0]]</data>
+      <data key="d82">[[0.03125, 0.03125, 0.03125], [0.03125, 0.03125, 0.03125]]</data>
+      <data key="d83">["sourcebus", "650"]</data>
+      <data key="d84">PowerModelsDistribution.ConnConfig[PowerModelsDistribution.DELTA, PowerModelsDistribution.WYE]</data>
+      <data key="d58">sub</data>
+      <data key="d59">ENABLED</data>
+      <data key="d85">0.0</data>
+      <data key="d61">Dict{String, Any}("windings" =&gt; "2", "name" =&gt; "sub", "phases" =&gt; "3", "xhl" =&gt; "8 1000 /", "kva" =&gt; "5000", "%r" =&gt; ".5 1000 /", "wdg" =&gt; "2", "conn" =&gt; "wye", "kv" =&gt; "4.16", "bus" =&gt; "650")</data>
+      <data key="d86">0.0</data>
+      <data key="d87">[8.0e-5]</data>
+      <data key="d63">transformer.sub</data>
+      <data key="d88">25000.0</data>
+      <data key="d89">[5.0e-6, 5.0e-6]</data>
+      <data key="d90">Vector{Bool}[[1, 1, 1], [1, 1, 1]]</data>
+      <data key="d91">[115.0, 4.16]</data>
+      <data key="d92">[[1.1, 1.1, 1.1], [1.1, 1.1, 1.1]]</data>
+      <data key="d74">transformer</data>
+    </edge>
+    <edge id="e26" source="n9" target="n13">
+      <data key="d77">[1, 1]</data>
+      <data key="d78">[1666.0, 1666.0]</data>
+      <data key="d79">[[0.9], [0.9]]</data>
+      <data key="d80">[[2], [2]]</data>
+      <data key="d81">[[1.0], [1.05]]</data>
+      <data key="d82">[[0.03125], [0.03125]]</data>
+      <data key="d83">["650", "rg60"]</data>
+      <data key="d84">PowerModelsDistribution.ConnConfig[PowerModelsDistribution.WYE, PowerModelsDistribution.WYE]</data>
+      <data key="d58">reg2</data>
+      <data key="d59">ENABLED</data>
+      <data key="d93">Dict{String, Any}("ctprim" =&gt; [[0.0], [700.0]], "x" =&gt; [[0.0], [9.0]], "r" =&gt; [[0.0], [3.0]], "ptratio" =&gt; [[0.0], [20.0]], "band" =&gt; [[0.0], [2.0]], "dss" =&gt; Dict{String, Any}("ctprim" =&gt; "700", "name" =&gt; "reg2", "winding" =&gt; "2", "transformer" =&gt; "reg2", "x" =&gt; "9", "r" =&gt; "3", "ptratio" =&gt; "20", "band" =&gt; "2", "vreg" =&gt; "122"), "vreg" =&gt; [[0.0], [122.0]])</data>
+      <data key="d85">0.0</data>
+      <data key="d61">Dict{String, Any}("name" =&gt; "reg2", "phases" =&gt; "1", "xhl" =&gt; "0.01", "kvas" =&gt; "1666 1666", "kvs" =&gt; "2.4  2.4", "%loadloss" =&gt; "0.01", "buses" =&gt; "650.2 rg60.2", "%rs" =&gt; "0 0", "taps" =&gt; "1.0 1.0500", "bank" =&gt; "reg1")</data>
+      <data key="d86">0.0</data>
+      <data key="d87">[0.0001]</data>
+      <data key="d63">transformer.reg2</data>
+      <data key="d88">2499.0</data>
+      <data key="d89">[0.0, 0.0]</data>
+      <data key="d90">Vector{Bool}[[1], [0]]</data>
+      <data key="d91">[2.4, 2.4]</data>
+      <data key="d94">reg1</data>
+      <data key="d92">[[1.1], [1.1]]</data>
+      <data key="d74">transformer</data>
+    </edge>
+    <edge id="e27" source="n9" target="n13">
+      <data key="d77">[1, 1]</data>
+      <data key="d78">[1666.0, 1666.0]</data>
+      <data key="d79">[[0.9], [0.9]]</data>
+      <data key="d80">[[3], [3]]</data>
+      <data key="d81">[[1.0], [1.06875]]</data>
+      <data key="d82">[[0.03125], [0.03125]]</data>
+      <data key="d83">["650", "rg60"]</data>
+      <data key="d84">PowerModelsDistribution.ConnConfig[PowerModelsDistribution.WYE, PowerModelsDistribution.WYE]</data>
+      <data key="d58">reg3</data>
+      <data key="d59">ENABLED</data>
+      <data key="d93">Dict{String, Any}("ctprim" =&gt; [[0.0], [700.0]], "x" =&gt; [[0.0], [9.0]], "r" =&gt; [[0.0], [3.0]], "ptratio" =&gt; [[0.0], [20.0]], "band" =&gt; [[0.0], [2.0]], "dss" =&gt; Dict{String, Any}("ctprim" =&gt; "700", "name" =&gt; "reg3", "winding" =&gt; "2", "transformer" =&gt; "reg3", "x" =&gt; "9", "r" =&gt; "3", "ptratio" =&gt; "20", "band" =&gt; "2", "vreg" =&gt; "122"), "vreg" =&gt; [[0.0], [122.0]])</data>
+      <data key="d85">0.0</data>
+      <data key="d61">Dict{String, Any}("name" =&gt; "reg3", "phases" =&gt; "1", "xhl" =&gt; "0.01", "kvas" =&gt; "1666 1666", "kvs" =&gt; "2.4  2.4", "%loadloss" =&gt; "0.01", "buses" =&gt; "650.3 rg60.3", "%rs" =&gt; "0 0", "taps" =&gt; "1.0 1.06875", "bank" =&gt; "reg1")</data>
+      <data key="d86">0.0</data>
+      <data key="d87">[0.0001]</data>
+      <data key="d63">transformer.reg3</data>
+      <data key="d88">2499.0</data>
+      <data key="d89">[0.0, 0.0]</data>
+      <data key="d90">Vector{Bool}[[1], [0]]</data>
+      <data key="d91">[2.4, 2.4]</data>
+      <data key="d94">reg1</data>
+      <data key="d92">[[1.1], [1.1]]</data>
+      <data key="d74">transformer</data>
+    </edge>
+    <edge id="e28" source="n25" target="n5">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e29" source="n26" target="n7">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e30" source="n27" target="n1">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e31" source="n28" target="n7">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e32" source="n29" target="n4">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e33" source="n30" target="n6">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e34" source="n31" target="n8">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e35" source="n32" target="n11">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e36" source="n33" target="n12">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e37" source="n34" target="n23">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e38" source="n35" target="n14">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e39" source="n36" target="n15">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e40" source="n37" target="n5">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e41" source="n38" target="n18">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e42" source="n39" target="n23">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e43" source="n40" target="n5">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e44" source="n41" target="n7">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e45" source="n42" target="n22">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e46" source="n43" target="n23">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e47" source="n44" target="n0">
+      <data key="d58">virtual_edge.load</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e48" source="n45" target="n7">
+      <data key="d58">virtual_edge.shunt</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e49" source="n46" target="n14">
+      <data key="d58">virtual_edge.shunt</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e50" source="n47" target="n7">
+      <data key="d58">virtual_edge.generator</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e51" source="n48" target="n11">
+      <data key="d58">virtual_edge.solar</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e52" source="n49" target="n18">
+      <data key="d58">virtual_edge.solar</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e53" source="n50" target="n11">
+      <data key="d58">virtual_edge.storage</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e54" source="n51" target="n12">
+      <data key="d58">virtual_edge.storage</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e55" source="n52" target="n11">
+      <data key="d58">virtual_edge.storage</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+    <edge id="e56" source="n53" target="n21">
+      <data key="d58">virtual_edge.voltage_source</data>
+      <data key="d74">virtual_edge</data>
+    </edge>
+  </graph>
+</graphml>
