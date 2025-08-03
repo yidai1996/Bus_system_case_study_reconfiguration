@@ -29,6 +29,20 @@ eng = PMD.parse_file(joinpath(onm_path, "ieee13_feeder.dss"))
 
 eng["switch_close_actions_ub"] = Inf
 
+# md"""### modify the raw ONM/PMD data (eng) and rebuild
+# """
+# find the right generator entry in eng["gen"]
+for (gen_id, gen) in eng["generator"]
+  if gen["bus"] == 7 && gen["type"] == :solar
+    gen["pmin"] .= 0.0           # kW
+    gen["pmax"] .= 300.0         # kW
+  end
+end
+
+
+# md"""### original code
+# """
+
 PMD.apply_voltage_bounds!(eng)
 
 math = ONM.transform_data_model(eng)
@@ -1405,10 +1419,10 @@ for (i,switch) in ref[:switch]
 end
 
 # ╔═╡ 9b7446d5-0751-4df6-b716-e8d5f85848a8
-md"""#### Transformer Constraints
+# md"""#### Transformer Constraints
 
-The following constraints model wye and delta connected transformers, including the capability to adjust the tap variables for voltage stability.
-"""
+# The following constraints model wye and delta connected transformers, including the capability to adjust the tap variables for voltage stability.
+# """
 
 # ╔═╡ 0bad7fc4-0a8d-46e7-b126-91b3542fed42
 for (i,transformer) in ref[:transformer]
@@ -1528,17 +1542,17 @@ for (i,transformer) in ref[:transformer]
 end
 
 # ╔═╡ 6df404eb-d816-4ae4-ae3f-a39505f79669
-md"""### Objective
+# md"""### Objective
 
-Below is the objective function used for the block-mld problem, which includes terms for
+# Below is the objective function used for the block-mld problem, which includes terms for
 
-- minimizing the amount of load shed
-- minimizing the number of switches left open
-- minimizing the number of switches changing from one state to another
-- maximizing the amount of stored energy at the end of the elapsed time
-- minimizing the cost of generation
+# - minimizing the amount of load shed
+# - minimizing the number of switches left open
+# - minimizing the number of switches changing from one state to another
+# - maximizing the amount of stored energy at the end of the elapsed time
+# - minimizing the cost of generation
 
-"""
+# """
 
 # ╔═╡ 5c04b2c2-e83b-4289-b439-2e016a20678e
 begin
@@ -1573,50 +1587,19 @@ begin
     )
 end
 
-# ╔═╡ a78fb463-0ffe-41db-a48b-63a4ae9ff3f7
-md"""## Model comparison
+# md"""### Manual Model
 
-In this section we compare the models and their solutions, to see if they are equivalent.
-"""
-
-# ╔═╡ 52867723-336e-460d-a1a6-a7993778b3e9
-md"""### JuMP Model as built automatically by ONM
-
-Here, we build the JuMP model using the built-in ONM tools. Specifically, we use the `instantiate_onm_model` function, to build the block-mld problem `build_block_mld`, using the LinDist3Flow formulation `LPUBFDiagPowerModel`.
-
-We are doing this so that we can compare the automatically built model against the manually built one.
-"""
-
-# ╔═╡ d9cd6181-cd1d-48f9-b610-f3b2dea1c640
-orig_model = ONM.instantiate_onm_model(eng, PMD.LPUBFDiagPowerModel, ONM.build_block_mld).model
-
-# ╔═╡ bc4e4a20-2584-4706-a4d7-ad0d9de43351
-md"""#### Save automatic model to disk for comparison
-
-If it is desired to look at the model in a file, to more directly compare it to another model, change `false` to `true`.
-"""
-
-# ╔═╡ 9ffd1f23-f82c-45b5-9a69-9fde7e296cf1
-if false
-	orig_dest = JuMP.MOI.FileFormats.Model(format = JuMP.MOI.FileFormats.FORMAT_MPS)
-	JuMP.MOI.copy_to(orig_dest, pm_orig.model)
-	JuMP.MOI.write_to_file(orig_dest, "orig_model.mof.mps")
-end
-
-# ╔═╡ 61e70040-9fc4-4681-a25f-d144a857aabd
-md"""### Manual Model
-
-Below is a summary of the JuMP model that was built by-hand above.
-"""
+# Below is a summary of the JuMP model that was built by-hand above.
+# """
 
 # ╔═╡ efcd69c1-6ea2-4524-a053-bfb40fb01dda
 model
 
 # ╔═╡ 4938609f-ce32-4798-bfc8-c6ca205e1209
-md"""#### Save manual model to disk for comparison
+# md"""#### Save manual model to disk for comparison
 
-If it is desired to look at the model in a file, to more directly compare it to another model, change `false` to `true`.
-"""
+# If it is desired to look at the model in a file, to more directly compare it to another model, change `false` to `true`.
+# """
 
 # ╔═╡ ba60b4e3-fcdc-4efc-994b-1872a8f58703
 if false
@@ -1626,8 +1609,8 @@ if false
 end
 
 # ╔═╡ 8c545f8e-22b3-4f53-a02d-5473bc9e1a3a
-md"""### Solve original model
-"""
+# md"""### Solve original model
+# """
 
 # ╔═╡ cfd8e9d3-1bb0-42a2-920d-5e343609c237
 JuMP.set_optimizer(orig_model, solver)
@@ -1636,10 +1619,66 @@ JuMP.set_optimizer(orig_model, solver)
 JuMP.optimize!(orig_model)
 
 # ╔═╡ 25970a05-5503-455c-9b56-d0147702371c
-md"### Solve Manual Model"
+# md"### Solve Manual Model"
 
 # ╔═╡ b758be56-9ed0-4474-8361-73b3d2de89af
 JuMP.set_optimizer(model, solver)
 
 # ╔═╡ 5084a4ed-1638-4d77-91e4-5d77788ce0fe
 JuMP.optimize!(model)
+
+# md"""### Visualization
+# """
+using JuMP, Plots
+
+function visualize_switch_configuration(z_switch, ref)
+    # 1) 节点数、圆形布局坐标
+    n_buses = maximum(collect(keys(ref[:bus])))
+    angles = [2π*(i-1)/n_buses for i in 1:n_buses]
+    xs = cos.(angles)
+    ys = sin.(angles)
+
+    # 2) 初始化画布
+    plt = plot(
+        title="Distribution Network Configuration",
+        legend=false,
+        axis=false,
+        aspect_ratio=1,
+        size=(700,700),
+    )
+
+    # 3) 画每条 switch（边）
+    for i in sort(collect(keys(z_switch)))
+        s = z_switch[i]
+        status = isa(s, JuMP.VariableRef) ? round(JuMP.value(s)) : s
+        col = status == 1 ? :green : :red
+
+        f_bus = ref[:switch][i]["f_bus"]
+        t_bus = ref[:switch][i]["t_bus"]
+
+        # 画线段
+        plot!([xs[f_bus], xs[t_bus]], [ys[f_bus], ys[t_bus]],
+              color=col, linewidth=2)
+
+        # 在线段中点标注
+        mx, my = (xs[f_bus] + xs[t_bus])/2, (ys[f_bus] + ys[t_bus])/2
+        annotate!(mx, my, text("sw$i", 8, col))
+    end
+
+    # 4) 画节点（bus）
+    scatter!(xs, ys,
+             marker=(:circle,12),
+             markercolor=:lightblue,
+             strokecolor=:black)
+
+    # 5) 标注每个 bus 编号
+    for bus_id in 1:n_buses
+        annotate!(xs[bus_id], ys[bus_id],
+                  text(string(bus_id), 10, :black))
+    end
+
+    display(plt)
+end
+
+
+visualize_switch_configuration(z_switch, ref)

@@ -2,6 +2,7 @@
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 GraphIO = "aa1b3936-2fda-51b9-ab35-c553d3a640a2"
+GraphRecipes = "bd48cda9-67a9-57be-86fa-5b3c104eda73"
 HiGHS = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
 InfrastructureModels = "2030c09a-7f63-5d83-885d-db604e0e9cc0"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
